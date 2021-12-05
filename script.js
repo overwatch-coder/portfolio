@@ -18,7 +18,7 @@ let i = 0;
 //function to create the animation effect
 function typingName() {
     if(i == texts.length){
-        i = 0;
+        i = 1;
         textContainer.innerHTML = texts.charAt(i-1);
     }else{
         textContainer.innerHTML += texts.charAt(i);
