@@ -28,7 +28,7 @@ function typingName() {
 
 //calling the function and setting the time interval
 typingName();
-setInterval(typingName, 300);
+setInterval(typingName, 400);
 
 //pushing contents under navbar down when it has a class of 'show'
 let navButton = document.getElementById('nav-button');
