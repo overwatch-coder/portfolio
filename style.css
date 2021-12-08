@@ -168,8 +168,12 @@ footer a:hover{
     }
 
     .intro_image{
-        width: 63%;
+        width: 70%;
         margin-top: 70px;
+    }
+
+    #typing_text{
+        font-size: 20px !important;
     }
 
     /* About Section */
