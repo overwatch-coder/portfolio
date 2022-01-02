@@ -1,0 +1,12 @@
+@mixin hyperlink(){
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+@mixin onFocus(){
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+}

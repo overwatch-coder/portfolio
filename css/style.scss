@@ -1,0 +1,182 @@
+@import "default";
+@import "mixins";
+@import "variables";
+
+.navigate{
+    a{
+        @include hyperlink();
+        &:hover{
+            color:  $shadeOfBlue !important;
+        }
+    }
+}
+
+#main-nav{
+    background-color: #fefeff;
+    .navbar-brand{
+        color: $shadeOfBlue;
+    }
+    .navbar-toggler{
+        @include onFocus();
+        &:hover{
+            background-color: #f5f5fa;
+        }
+    }
+}
+
+.active{
+    color:  $shadeOfBlue !important;
+    &:hover{
+        border-bottom: none;
+        color: $shadeOfVioletOne;
+    }
+}
+
+#navbarNavDropdown{
+    .nav-link{
+        font-size: 16px;
+        &:hover{
+            color:  $shadeOfBlue !important;
+        }
+    }
+}
+
+
+/* Introduction Section */
+#intro_section{
+    margin-top: 250px;
+
+    h1{
+        font-weight: bold;
+    }
+
+    #intro_name{
+        color:  $shadeOfBlue;
+    }
+
+    .outline-button{
+        color:  $shadeOfBlue;
+        border: 1px solid  $shadeOfBlue;
+        &:hover{
+            color: #ffff;
+            background-color: $shadeOfVioletTwo;
+            border: 1px solid $shadeOfVioletTwo;
+        }
+    }
+
+    .intro_image{
+        width: 90%;
+    }
+}
+
+
+/* About Section */
+#about{
+
+    .about-button{
+        background-color: $shadeOfVioletOne;
+        border: 1px solid $shadeOfVioletOne;
+
+        &:hover{
+            background-color: $shadeOfVioletThree;
+            border: 1px solid $shadeOfVioletThree;
+        }
+    }
+
+    .horizontal-line{
+        border-top: 1px solid $shadeOfVioletOne;
+    } 
+
+    .vertical-line{
+        border-right: 1px solid $shadeOfVioletOne;
+        height: 100px;
+        position: relative;
+        left: -50%;
+        right: 50%;
+    }
+}
+
+/* Services */
+#services{
+    .services_icon{
+        width: 50px;
+    }
+
+    .service-box{
+        transition: all 0.8s ease-in-out;
+        transform: scale(1);
+        &:hover{
+            transition: all 0.8s ease-in-out;
+            transform: scale(1.1);
+            background-color: #ececec;
+        }
+    }
+
+}
+
+
+/* portfolio section */
+#portfolio{
+
+    #portfolio_stacks{
+
+        .stack{
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+
+                img{
+                filter: blur(5px);
+                transition: all 0.4s ease-in-out;
+                }
+
+                .description{
+                    display: block;
+                }
+        }
+
+        .description{
+            position: absolute;
+            top: 40%;
+            left: 0%;
+            right: 0%;
+            display: none;
+        }
+    }
+
+    }
+}
+
+
+/* Contact Section */
+#form{
+    input, textarea{
+        @include onFocus();
+    }
+
+    #success-message{
+        display: none;
+    }
+
+    button{
+        background-color: $shadeOfVioletOne !important;
+        @include onFocus();
+        border: none;
+        &:hover{
+            opacity: 0.9;
+            scale: 0.99;
+        }
+    }
+}
+
+/* Footer */
+footer{
+    a{
+        &:hover{
+            color:  $shadeOfBlue !important;
+        }
+    } 
+}
+
+/* MEDIA QUERIES */
+@import "mediaQueries";

@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.navigate a {
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.navigate a:hover {
+  color: #2C1EDC !important;
+}
+
+#main-nav {
+  background-color: #fefeff;
+}
+
+#main-nav .navbar-brand {
+  color: #2C1EDC;
+}
+
+#main-nav .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#main-nav .navbar-toggler:hover {
+  background-color: #f5f5fa;
+}
+
+.active {
+  color: #2C1EDC !important;
+}
+
+.active:hover {
+  border-bottom: none;
+  color: #564dcc;
+}
+
+#navbarNavDropdown .nav-link {
+  font-size: 16px;
+}
+
+#navbarNavDropdown .nav-link:hover {
+  color: #2C1EDC !important;
+}
+
+/* Introduction Section */
+#intro_section {
+  margin-top: 250px;
+}
+
+#intro_section h1 {
+  font-weight: bold;
+}
+
+#intro_section #intro_name {
+  color: #2C1EDC;
+}
+
+#intro_section .outline-button {
+  color: #2C1EDC;
+  border: 1px solid #2C1EDC;
+}
+
+#intro_section .outline-button:hover {
+  color: #ffff;
+  background-color: #4e44d3;
+  border: 1px solid #4e44d3;
+}
+
+#intro_section .intro_image {
+  width: 90%;
+}
+
+/* About Section */
+#about .about-button {
+  background-color: #564dcc;
+  border: 1px solid #564dcc;
+}
+
+#about .about-button:hover {
+  background-color: #6e66e9;
+  border: 1px solid #6e66e9;
+}
+
+#about .horizontal-line {
+  border-top: 1px solid #564dcc;
+}
+
+#about .vertical-line {
+  border-right: 1px solid #564dcc;
+  height: 100px;
+  position: relative;
+  left: -50%;
+  right: 50%;
+}
+
+/* Services */
+#services .services_icon {
+  width: 50px;
+}
+
+#services .service-box {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#services .service-box:hover {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #ececec;
+}
+
+/* portfolio section */
+#portfolio #portfolio_stacks .stack {
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio #portfolio_stacks .stack:hover img {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#portfolio #portfolio_stacks .stack:hover .description {
+  display: block;
+}
+
+#portfolio #portfolio_stacks .stack .description {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  right: 0%;
+  display: none;
+}
+
+/* Contact Section */
+#form input:focus, #form textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#form #success-message {
+  display: none;
+}
+
+#form button {
+  background-color: #564dcc !important;
+  border: none;
+}
+
+#form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#form button:hover {
+  opacity: 0.9;
+  scale: 0.99;
+}
+
+/* Footer */
+footer a:hover {
+  color: #2C1EDC !important;
+}
+
+/* MEDIA QUERIES */
+/* Setting responsiveness when width reaches 765 or less */
+@media screen and (max-width: 765px) {
+  /* Intro section */
+  #intro_section {
+    margin-top: 170px;
+  }
+  .intro_image {
+    width: 70%;
+    margin-top: 70px;
+  }
+  #typing_text {
+    font-size: 20px !important;
+  }
+  /* About Section */
+  #about_profile {
+    margin-top: 50px;
+  }
+  .about_me {
+    font-size: 14px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

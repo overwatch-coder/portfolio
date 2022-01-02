@@ -1,0 +1,25 @@
+/* Setting responsiveness when width reaches 765 or less */
+@media  screen and (max-width : 765px) {
+    /* Intro section */
+    #intro_section{
+        margin-top: 170px;
+    }
+
+    .intro_image{
+        width: 70%;
+        margin-top: 70px;
+    }
+
+    #typing_text{
+        font-size: 20px !important;
+    }
+
+    /* About Section */
+    #about_profile{
+        margin-top: 50px;
+    }
+
+    .about_me{
+        font-size: 14px !important;
+    }
+}
