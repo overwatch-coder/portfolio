@@ -2,6 +2,10 @@
 @import "mixins";
 @import "variables";
 
+.outline-button{
+    @include onFocus();
+}
+
 .navigate{
     a{
         @include hyperlink();
@@ -76,7 +80,7 @@
     .about-button{
         background-color: $shadeOfVioletOne;
         border: 1px solid $shadeOfVioletOne;
-
+        @include onFocus();
         &:hover{
             background-color: $shadeOfVioletThree;
             border: 1px solid $shadeOfVioletThree;
@@ -93,9 +97,6 @@
         position: relative;
         left: -50%;
         right: 50%;
-    }
-    button{
-    @include onFocus();
     }
 }
 

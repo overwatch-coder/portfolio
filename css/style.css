@@ -11,9 +11,15 @@ body {
   scroll-behavior: smooth;
 }
 
+.outline-button:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
 .navigate a {
-  text-decoration: none;
-  list-style-type: none;
+  text-decoration: none !important;
+  list-style-type: none !important;
   cursor: pointer;
 }
 
@@ -30,9 +36,9 @@ body {
 }
 
 #main-nav .navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
 }
 
 #main-nav .navbar-toggler:hover {
@@ -88,6 +94,12 @@ body {
 #about .about-button {
   background-color: #564dcc;
   border: 1px solid #564dcc;
+}
+
+#about .about-button:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
 }
 
 #about .about-button:hover {
@@ -155,9 +167,9 @@ body {
 
 /* Contact Section */
 #form input:focus, #form textarea:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
 }
 
 #form #success-message {
@@ -170,9 +182,9 @@ body {
 }
 
 #form button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
 }
 
 #form button:hover {
