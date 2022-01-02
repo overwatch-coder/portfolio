@@ -94,6 +94,9 @@
         left: -50%;
         right: 50%;
     }
+    button{
+    @include onFocus();
+    }
 }
 
 /* Services */
