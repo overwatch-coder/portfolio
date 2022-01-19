@@ -105,17 +105,6 @@
     .services_icon{
         width: 50px;
     }
-
-    .service-box{
-        transition: all 0.8s ease-in-out;
-        transform: scale(1);
-        &:hover{
-            transition: all 0.8s ease-in-out;
-            transform: scale(1.1);
-            background-color: #ececec;
-        }
-    }
-
 }
 
 
@@ -123,31 +112,50 @@
 #portfolio{
 
     #portfolio_stacks{
-
         .stack{
             position: relative;
-            transition: all 0.3s ease-in-out;
-            &:hover{
+            transition: height 0.3s ease-in-out;
 
+            &:hover{
                 img{
-                filter: blur(5px);
-                transition: all 0.4s ease-in-out;
+                    cursor: pointer;
                 }
 
                 .description{
+                    animation: overlay 1s ease-in-out 1 normal;
+                    transition: height 0.3s ease-in-out;
+                    background-color: $shadeOfVioletThree;
                     display: block;
+                    height: 100%;
+                    h3, p{
+                        position: absolute;
+                        top: 40%;
+                        left: 0%;
+                        right: 0%;
+                    }
                 }
         }
 
         .description{
             position: absolute;
-            top: 40%;
+            top: 0%;
             left: 0%;
             right: 0%;
             display: none;
         }
     }
 
+    }
+
+    @keyframes overlay {
+        from{
+            height: 0%;
+            transition: height 0.3s ease-in-out;
+        }
+        to{
+            height: 100%;
+            transition: height 0.3s ease-in-out;
+        }
     }
 }
 
@@ -175,11 +183,21 @@
 
 /* Footer */
 footer{
+    background-color: $shadeOfVioletThree;
     a{
         &:hover{
-            color:  $shadeOfBlue !important;
+            color:  #ffff !important;
         }
     } 
+
+    .the-socials{
+        a{
+            &:hover{
+                color: rgba(32, 32, 32, 1) !important;
+            }
+            
+        }
+    }
 }
 
 /* MEDIA QUERIES */

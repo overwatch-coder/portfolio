@@ -124,45 +124,66 @@ body {
   width: 50px;
 }
 
-#services .service-box {
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-#services .service-box:hover {
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: #ececec;
-}
-
 /* portfolio section */
 #portfolio #portfolio_stacks .stack {
   position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }
 
 #portfolio #portfolio_stacks .stack:hover img {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 #portfolio #portfolio_stacks .stack:hover .description {
+  -webkit-animation: overlay 1s ease-in-out 1 normal;
+          animation: overlay 1s ease-in-out 1 normal;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  background-color: #6e66e9;
   display: block;
+  height: 100%;
 }
 
-#portfolio #portfolio_stacks .stack .description {
+#portfolio #portfolio_stacks .stack:hover .description h3, #portfolio #portfolio_stacks .stack:hover .description p {
   position: absolute;
   top: 40%;
   left: 0%;
   right: 0%;
+}
+
+#portfolio #portfolio_stacks .stack .description {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
   display: none;
+}
+
+@-webkit-keyframes overlay {
+  from {
+    height: 0%;
+    -webkit-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
+  to {
+    height: 100%;
+    -webkit-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
+}
+
+@keyframes overlay {
+  from {
+    height: 0%;
+    -webkit-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
+  to {
+    height: 100%;
+    -webkit-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
 }
 
 /* Contact Section */
@@ -193,8 +214,16 @@ body {
 }
 
 /* Footer */
+footer {
+  background-color: #6e66e9;
+}
+
 footer a:hover {
-  color: #2C1EDC !important;
+  color: #ffff !important;
+}
+
+footer .the-socials a:hover {
+  color: #202020 !important;
 }
 
 /* MEDIA QUERIES */
