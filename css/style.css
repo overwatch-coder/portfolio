@@ -241,8 +241,6 @@ footer .the-socials a:hover {
   }
   #intro_section .intro_image {
     width: 60%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
     margin-top: 60px;
   }
   #typing_text {
