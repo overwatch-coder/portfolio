@@ -88,9 +88,15 @@ body {
 
 #intro_section .intro_image {
   width: 90%;
+  -webkit-clip-path: circle(50% at center);
+          clip-path: circle(50% at center);
 }
 
 /* About Section */
+#about img {
+  border-radius: 5%;
+}
+
 #about .about-button {
   background-color: #564dcc;
   border: 1px solid #564dcc;
@@ -233,9 +239,11 @@ footer .the-socials a:hover {
   #intro_section {
     margin-top: 170px;
   }
-  .intro_image {
-    width: 70%;
-    margin-top: 70px;
+  #intro_section .intro_image {
+    width: 60%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    margin-top: 60px;
   }
   #typing_text {
     font-size: 20px !important;

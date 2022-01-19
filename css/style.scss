@@ -70,12 +70,18 @@
 
     .intro_image{
         width: 90%;
+        clip-path: circle(50% at center);
+        // transform: rotate(20deg);
+        // border-radius: 50%;
     }
 }
 
 
 /* About Section */
 #about{
+    img{
+        border-radius: 5%;
+    }
 
     .about-button{
         background-color: $shadeOfVioletOne;
